@@ -1,0 +1,63 @@
+# Local secrets
+.env
+.env.*
+!.env.example
+
+# Python environments and caches
+.venv/
+venv/
+env/
+.uv-cache/
+.uv-python/
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Build artifacts
+build/
+dist/
+*.egg-info/
+
+# Runtime outputs, logs, and generated review artifacts
+outputs/
+outputs*/
+*.log
+*.log.jsonl
+
+# Local databases and private datasets
+*.db
+*.sqlite
+*.sqlite3
+*.duckdb
+data/
+local_data/
+private/
+*.csv
+*.tsv
+*.xlsx
+*.xls
+*.parquet
+*.feather
+
+# Private paper inputs copied in for testing
+examples/paper_*.md
+
+# Credentials and certificates
+*.pem
+*.key
+*.p12
+*.pfx
+*.crt
+id_rsa*
+id_ed25519*
+
+# Editor and OS metadata
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

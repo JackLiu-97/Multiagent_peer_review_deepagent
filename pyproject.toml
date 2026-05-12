@@ -1,0 +1,32 @@
+[project]
+name = "multiagent-peer-review-deepagent"
+version = "0.1.0"
+description = "DeepAgent-style LangGraph thesis review engine."
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "deepagents>=0.4.12",
+    "langchain>=1.2.3",
+    "langchain-openai>=1.1.7",
+    "langgraph>=1.0.5",
+    "pydantic>=2.10.0",
+    "pymysql>=1.1.2",
+    "python-dotenv>=1.0.1",
+    "sqlalchemy>=2.0.0",
+]
+
+[project.scripts]
+review-engine = "review_engine.cli.run_review:main"
+
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.uv]
+index-url = "https://mirrors.aliyun.com/pypi/simple"
